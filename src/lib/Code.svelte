@@ -13,12 +13,6 @@
         delete output.dataset.highlighted
 		hljs.highlightElement(output)
 	}
-
-	function highlight(output) {
-		// e.detail.output is the <code> element
-		// that displays the processed text
-		hljs.highlightElement(output);
-	}
 </script>
 
 <Editor fontSize="12px" bind:source={$code} width="100%" height="100%" class="hljs" outputClass="{language}" on:update={update} />
