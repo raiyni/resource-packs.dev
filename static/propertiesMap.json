@@ -1,5 +1,5 @@
 {
-    "overlay.color": "overlay_color",
+    "overlay": "overlay_color",
     "account_management.separator": "account_management_tab_line",
     "achievement_diary.border": "achievement_diary_border",
     "achievement_diary.progress_border": "achievement_diary_progress_border",
