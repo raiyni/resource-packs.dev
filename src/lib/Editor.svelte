@@ -18,8 +18,7 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 
 	export type UpdateEditor = CustomEvent<UpdateEditorDetail>;
 
-	const range = (start: number, end: number) =>
-		new Array(end - start + 1).fill(0).map((_, i) => i + start);
+	const range = (start: number, end: number) => new Array(end - start + 1).fill(0).map((_, i) => i + start);
 </script>
 
 <script lang="ts">
@@ -123,20 +122,15 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 	style:--tabSize={tabSize}
 	style:--width={width}
 	class:with-bg={!!background}
-	on:scroll
->
+	on:scroll>
 	{#if !hideLines}
-		<ol
-			class="lines {lineNumbersClass}"
-			class:with-lines-bg={!!lineNumbersBg}
-			bind:clientWidth={linesWidth}
-		>
+		<ol class="lines {lineNumbersClass}" class:with-lines-bg={!!lineNumbersBg} bind:clientWidth={linesWidth}>
 			{#each range(1, lineCount) as n}
 				<li class={lineNumbersClass}>{n}</li>
 			{/each}
 		</ol>
 	{/if}
-<textarea
+	<textarea
 		class="editor-input {inputClass}"
 		spellcheck={false}
 		bind:this={input}
@@ -153,9 +147,8 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 		on:mousemove
 		on:mouseenter
 		on:mouseleave
-		on:mouseover
-	/>
-<pre class="editor-content {contentClass}" aria-hidden="true" bind:this={content}><code class="editor-output {outputClass}" bind:this={output} /></pre>
+		on:mouseover />
+	<pre class="editor-content {contentClass}" aria-hidden="true" bind:this={content}><code class="editor-output {outputClass}" bind:this={output} /></pre>
 </div>
 
 <style>
