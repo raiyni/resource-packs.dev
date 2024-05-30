@@ -12,7 +12,6 @@
         var output = e.detail.output
         delete output.dataset.highlighted
 		hljs.highlightElement(output)
-        onChange(e)
 	}
 
 	function highlight(output) {
