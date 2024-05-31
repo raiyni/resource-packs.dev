@@ -25,7 +25,9 @@
 			if (mapped[value]) {
 				output.push(`[${key}]
 color=${mapped[value]}`);
-			}
+			} else {
+                console.warn(`${value} does not exist in properties`)
+            }
 		}
 
 		code.set(output.join('\n\n'));
