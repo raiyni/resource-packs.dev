@@ -16,7 +16,6 @@
 		for (const line of lines) {
 			if (line.indexOf('=') > -1) {
 				const match = line.match(/(.*)=(.*)/);
-				console.log(match);
 				mapped[match[1]] = match[2];
 			}
 		}
