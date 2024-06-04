@@ -47,7 +47,7 @@
     "settings_tab.separator": "options_tab_seperator_line",
     "skill_guide.body.border.inner": "ge_border_offer_buy_offer_full_inner",
     "skill_guide.body.border.outer": "ge_border_offer_buy_offer_full_outer",
-    "skill_guide.tab.border": "combat_choose_spell_background",
+    "skill_guide.tab.border": "ge_border_offer_buy_offer_full_inner",
     "world_map.dropdown.border.inner": "world_map_place_dropdown_border_inner",
     "world_map.dropdown.border.outer": "world_map_place_dropdown_border_outer",
     "world_map.location_menu.border.inner": "world_map_place_border_inner",
