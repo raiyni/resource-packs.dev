@@ -30,7 +30,7 @@ color=${mapped[value]}`);
 # color=0`);
             }
 
-			if(data.opacity[key]) {
+			if(key in data.opacity) {
 				var o = data.opacity[key]
 				output.push(`# opacity=${o}`)
 			}
