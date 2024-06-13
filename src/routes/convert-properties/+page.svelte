@@ -31,11 +31,13 @@ color=${mapped[value]}`);
             }
 
 			if(data.opacity[key]) {
-				output.push(`# opacity=${data.opacity[key]}`)
+				var o = data.opacity[key]
+				output.push(`# opacity=${o}
+`)
 			}
 		}
 
-		code.set(output.join('\n\n'));
+		code.set(output.join('\n'));
 	});
 </script>
 
