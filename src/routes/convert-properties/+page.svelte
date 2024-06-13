@@ -21,7 +21,7 @@
 		}
 
 		for (const [key, value] of Object.entries(data.mapped)) {
-			if (mapped[value]) {
+			if (!!mapped[value]) {
 				output.push(`[${key}]
 color=${mapped[value]}`);
 			} else {
