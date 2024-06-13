@@ -35,7 +35,7 @@ color=${mapped[value]}`);
 				output.push(`# opacity=${o}`)
 			}
 
-			output.push("\n")
+			output.push("")
 		}
 
 		code.set(output.join('\n'));
