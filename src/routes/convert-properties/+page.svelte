@@ -29,6 +29,10 @@ color=${mapped[value]}`);
                 output.push(`# [${key}]
 # color=0`);
             }
+
+			if(data.opacity[key]) {
+				output.push(`# opacity=${data.opacity[key]}`)
+			}
 		}
 
 		code.set(output.join('\n\n'));
