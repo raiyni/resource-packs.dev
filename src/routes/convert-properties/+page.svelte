@@ -32,9 +32,10 @@ color=${mapped[value]}`);
 
 			if(data.opacity[key]) {
 				var o = data.opacity[key]
-				output.push(`# opacity=${o}
-`)
+				output.push(`# opacity=${o}`)
 			}
+
+			output.push("\n")
 		}
 
 		code.set(output.join('\n'));
