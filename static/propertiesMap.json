@@ -10,6 +10,7 @@
     "bank.popup.border.inner": "bank_options_border_bank_fillers_inner",
     "bank.popup.border.outer": "bank_options_border_bank_fillers_outer",
     "bank.separator": "bank_tab_underline",
+    "bank.inventory.locked": "bank_options_border_bank_fillers_outer",
     "bonds_pouch.border.inner": "bank_options_border_bank_fillers_inner",
     "bonds_pouch.border.outer": "bank_options_border_bank_fillers_outer",
     "bounty_hunter.overlay.background": "overlay_color",

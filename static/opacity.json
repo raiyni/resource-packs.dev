@@ -1,6 +1,7 @@
 {
     "achievement_diary.entry.border": 150,
     "achievement_diary.progress.background": 150,
+    "bank.inventory.locked": 0,
     "bank.inventory.rune_pouch.border.inner": 0,
     "bank.inventory.rune_pouch.border.outer": 0,
     "bank.menu.border.inner": 0,
